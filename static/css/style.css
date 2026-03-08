@@ -1,0 +1,386 @@
+body {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  box-shadow: inset 0 0 100vw 0 #212121;
+}
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+body {
+  display: table-cell;
+  min-height: 100%;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'VelaSans-SemiBold';
+}
+@font-face {
+  src: url('../fonts/VelaSans-SemiBold.ttf');
+  font-family: 'VelaSans-SemiBold'
+}
+h1 {
+  color: white;
+  font-size: 60px;
+  line-height: 64.5px;
+}
+h2 {
+  font-size: 42px;
+}
+span {
+  font-size: 23px;
+}
+.content_div {
+  width: calc(100vw - 520px);
+}
+.main_text_div {
+  word-break: break-word;
+}
+.star_img {
+  width: 25px;
+  height: 25px;
+}
+.logos_div, .stars_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.stars_div {
+  width: 180px;
+}
+.logo_img {
+  width: 300px;
+}
+.recenzie_div, .buttons_div {
+  margin-top: 70px;
+}
+.stars_div {
+  margin-top: 20px;
+}
+.buttons_div {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+.link_btn {
+  font-weight: 800;
+}
+.link_btn {
+  height: 90px;
+  border-radius: 100vw;
+  border: none;
+  transition: .2s linear;
+  display: flex;
+  flex-direction: row;
+}
+.link1 {
+  background-color: #80f29f;
+  color: #0d3618;
+}
+.link1:hover {
+  box-shadow: 0 0 0 3px #131716, 0 0 0 6px #80f29f;
+}
+.logo_comp_btn1, .text_link1, .text_link2, .logo_comp_btn2 {
+  border-radius: 100vw;
+  width: 50%;
+}
+.text_link1, .text_link2 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.logo_comp_btn1 {
+  background-color: #65b87b;
+  background-image: url('../images/logo_site2.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logo_comp_btn2 {
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link2 {
+  background-color: #c7c7c7;
+  color: black;
+}
+.link2:hover {
+  box-shadow: 0 0 0 3px #131716, 0 0 0 6px #c7c7c7;
+}
+.buttons_div {
+  display: flex;
+  flex-direction: column;
+}
+.button_div:nth-child(2) {
+  margin-top: 40px;
+}
+.header_link2 {
+  color: #1cc995;
+}
+.main_text:nth-child(2), .main_text:nth-child(3) {
+  margin-top: 15px;
+}
+@media (max-width: 1440px){
+  .recenzie_div, .buttons_div {
+    margin-top: 65px;
+  }
+  .stars_div {
+    margin-top: 18.6px;
+  }
+  .button_div:nth-child(2) {
+    margin-top: 37.2px;
+  }
+  .content_div {
+    width: calc(100vw - 430px)
+  }
+  h1 {
+    font-size: 55.75px;
+    line-height: 62px;
+  }
+  h2 {
+    font-size: 39px;
+  }
+  span {
+    font-size: 21.4px;
+  }
+  .buttons_div {
+    width: 520px;
+  }
+  .link_btn {
+    height: 83.5px;
+  }
+  .main_text:nth-child(2), .main_text:nth-child(3) {
+    margin-top: 14px;
+  }
+}
+@media (max-width: 1200px){
+  .recenzie_div, .buttons_div {
+    margin-top: 60px;
+  }
+  .stars_div {
+    margin-top: 17.2px;
+  }
+  .button_div:nth-child(2) {
+    margin-top: 34.3px;
+  }
+  .content_div {
+    width: calc(100vw - 350px)
+  }
+  h1 {
+    font-size: 51.5px;
+    line-height: 57px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  span {
+    font-size: 19.7px;
+  }
+  .buttons_div {
+    width: 480px;
+  }
+  .stars_div {
+    width: 162px;
+  }
+  .logo_img {
+    width: 270px;
+  }
+  .star_img {
+    width: 23px;
+    height: 23px;
+  }
+  .link_btn {
+    height: 77.5px;
+  }
+  .main_text:nth-child(2), .main_text:nth-child(3) {
+    margin-top: 13px;
+  }
+}
+@media (max-width: 1024px){
+  .recenzie_div, .buttons_div {
+    margin-top: 55px;
+  }
+  .stars_div {
+    margin-top: 15.6px;
+  }
+  .button_div:nth-child(2) {
+    margin-top: 31.4px;
+  }
+  .content_div {
+    width: calc(100vw - 280px)
+  }
+  h1 {
+    font-size: 47.2px;
+    line-height: 52.1px;
+  }
+  h2 {
+    font-size: 33px;
+  }
+  span {
+    font-size: 18.2px;
+  }
+  .buttons_div {
+    width: 425px;
+  }
+  .stars_div {
+    width: 144px;
+  }
+  .logo_img {
+    width: 242px;
+  }
+  .star_img {
+    width: 22px;
+    height: 22px;
+  }
+  .link_btn {
+    height: 71px;
+  }
+  .main_text:nth-child(2), .main_text:nth-child(3) {
+    margin-top: 11.5px;
+  }
+}
+@media (max-width: 768px){
+  .recenzie_div, .buttons_div {
+    margin-top: 49.5px;
+  }
+  .stars_div {
+    margin-top: 14.1px;
+  }
+  .button_div:nth-child(2) {
+    margin-top: 28.3px;
+  }
+  .content_div {
+    width: calc(100vw - 195px)
+  }
+  h1 {
+    font-size: 42.5px;
+    line-height: 46.5px;
+  }
+  h2 {
+    font-size: 29.7px;
+  }
+  span {
+    font-size: 16.4px;
+  }
+  .buttons_div {
+    width: 345px;
+  }
+  .stars_div {
+    width: 125px;
+  }
+  .logo_img {
+    width: 205px;
+  }
+  .star_img {
+    width: 20px;
+    height: 20px;
+  }
+  .link_btn {
+    height: 64px;
+  }
+  .main_text:nth-child(2), .main_text:nth-child(3) {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 570px){
+  .recenzie_div, .buttons_div {
+    margin-top: 45.4px;
+  }
+  .stars_div {
+    margin-top: 12.9px;
+  }
+  .button_div:nth-child(2) {
+    margin-top: 26px;
+  }
+  .content_div {
+    width: calc(100vw - 122px)
+  }
+  h1 {
+    font-size: 39px;
+    line-height: 42px;
+  }
+  h2 {
+    font-size: 27.2px;
+  }
+  span {
+    font-size: 15.1px;
+  }
+  .buttons_div {
+    width: 300px;
+  }
+  .stars_div {
+    width: 115px;
+  }
+  .logo_img {
+    width: 185px;
+  }
+  .star_img {
+    width: 18.5px;
+    height: 18.5px;
+  }
+  .link_btn {
+    height: 59.7px;
+  }
+  .main_text:nth-child(2), .main_text:nth-child(3) {
+    margin-top: 8.5px;
+  }
+}
+@media (max-width: 428px){
+  .recenzie_div, .buttons_div {
+    margin-top: 41.7px;
+  }
+  .stars_div {
+    margin-top: 11.9px;
+  }
+  .button_div:nth-child(2) {
+    margin-top: 23.8px;
+  }
+  .content_div {
+    width: calc(100vw - 70px)
+  }
+  h1 {
+    font-size: 34.55px;
+    line-height: 37.52px;
+  }
+  h2 {
+    font-size: 24.2px;
+  }
+  span {
+    font-size: 13.5px;
+  }
+  .buttons_div {
+    width: 230px;
+  }
+  .stars_div {
+    width: 97px;
+  }
+  .logo_img {
+    width: 146px;
+  }
+  .star_img {
+    width: 16.5px;
+    height: 16.5px;
+  }
+  .link_btn {
+    height: 53.1px;
+  }
+  .main_text:nth-child(2), .main_text:nth-child(3) {
+    margin-top: 7.25px;
+  }
+}
